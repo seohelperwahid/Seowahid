@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SEOHelperWahid - Multilingual SEO Landing Page</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+    header, section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #00ffcc;
+    }
+    .language-block {
+      margin-top: 40px;
+      border-top: 1px solid #444;
+      padding-top: 20px;
+    }
+    canvas {
+      margin-top: 40px;
+      background: #222;
+      border-radius: 10px;
+    }
+    footer {
+      padding: 20px;
+      text-align: center;
+      color: #ccc;
+      font-size: 0.9em;
+    }
+    a {
+      color: #00ffcc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SEOHelperWahid</h1>
+    <p>Local SEO Content & Strategy for Berlin, Paris, London, and Morocco</p>
+  </header>
+
+  <section>
+    <h2>📈 SEO Growth Projection</h2>
+    <canvas id="seoChart" width="800" height="400"></canvas>
+    <script>
+      const ctx = document.getElementById('seoChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+          datasets: [{
+            label: 'Estimated Google Visibility',
+            data: [5, 15, 35, 70],
+            borderColor: '#00ffcc',
+            backgroundColor: 'rgba(0, 255, 204, 0.2)',
+            tension: 0.4,
+            fill: true
+          }]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+              ticks: { color: '#fff' },
+              grid: { color: '#444' }
+            },
+            x: {
+              ticks: { color: '#fff' },
+              grid: { color: '#444' }
+            }
+          },
+          plugins: {
+            legend: {
+              labels: { color: '#fff' }
+            }
+          }
+        }
+      });
+    </script>
+
+    <div class="language-block">
+      <h3>🇬🇧 English</h3>
+      <p>Boost your local visibility on Google with SEO-optimized blog content, keyword planning, and AI tools.</p>
+    </div>
+    <div class="language-block">
+      <h3>🇫🇷 Français</h3>
+      <p>Améliorez votre présence locale sur Google grâce à des articles SEO, une stratégie de mots-clés et des outils d'IA.</p>
+    </div>
+    <div class="language-block">
+      <h3>🇩🇪 Deutsch</h3>
+      <p>Verbessern Sie Ihre lokale Google-Sichtbarkeit mit SEO-Inhalten, Keyword-Strategie und KI-gestützten Lösungen.</p>
+    </div>
+    <div class="language-block">
+      <h3>🇲🇦 العربية</h3>
+      <p>قم بتحسين ظهورك المحلي على جوجل من خلال مقالات محسّنة بالكلمات المفتاحية وأدوات الذكاء الاصطناعي.</p>
+    </div>
+  </section>
+
+  <footer>
+    Contact: <a href="mailto:Mohawahid1997@gmail.com">Mohawahid1997@gmail.com</a> |
+    WhatsApp: <a href="https://wa.me/4915735645832">+49 1573 5645832</a> |
+    PayPal: <a href="https://www.paypal.com/paypalme/seohelperwahid">seohelperwahid</a>
+  </footer>
+</body>
+</html>
